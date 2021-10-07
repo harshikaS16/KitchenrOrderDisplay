@@ -1,0 +1,30 @@
+.displayContainer{
+    display: block;
+    width: 780px;
+    height: auto;
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+    padding: 12px 220px;
+}
+
+table {
+    color: white;
+    font-family: sans-serif;
+    border-spacing: 49px 0;
+}
+
+.btn {
+    background-color: #FFDE05;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.17), 0 1px 2px rgba(0,0,0,0.24);
+    text-decoration: none;
+    border: none;
+    height: 32px;
+    width: 60px;
+}
+
+.btn:hover{
+    background-color:#4A4865;
+    transition: ease-in 0.2s;
+}

@@ -1,0 +1,22 @@
+<div class="displayContainer">
+    <table *ngIf="isDataLoaded">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Created-till-now</th>
+                <th>Predicted</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of list">
+                <td style="text-align: left"> {{ item.name }} </td>
+                <td> {{ item.orderedQuantity }} </td>
+                <td> {{ item.createdCount }}</td>
+                <td> {{ item.predictedQuantity }} </td>
+                <td> <button [disabled]="item.orderedQuantity===0" class="btn" (click)="done(item)">Done</button> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

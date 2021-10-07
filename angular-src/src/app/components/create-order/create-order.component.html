@@ -1,0 +1,20 @@
+<div class="displayContainer">
+    <div class="input-field col s12">
+      <input class="formInput" placeholder="Select the Item.." type="text" [(ngModel)]=query (keyup)=filter()>
+    </div>
+    <div *ngIf="filteredList.length > 0">
+        <ul *ngFor="let item of filteredList">
+            <li>
+                <a (click)="select(item)">{{item}}</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+      <input class="formInput" placeholder="Add the Quantity ordered.." type="number" min="0" [(ngModel)]="quantity">
+    </div>
+    <div>
+      <button class="btn" *ngIf="updateType === 'creation'" (click)="create()">Place Order</button>
+      <button class="btn" *ngIf="updateType === 'prediction'" (click)="create()">Set the Prediction</button>
+    </div>
+    <flash-messages class="flash-message"></flash-messages>
+</div>  

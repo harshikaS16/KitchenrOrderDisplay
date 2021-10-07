@@ -1,0 +1,23 @@
+{
+  "name": "faasoskitchen",
+  "version": "1.0.0",
+  "description": "Faasos Kitchen Display App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "*",
+    "cors": "*",
+    "exceljs": "^1.4.6",
+    "express": "*",
+    "mongoose": "*",
+    "socket.io": "^2.1.0",
+    "socket.io-redis": "^5.2.0",
+    "tempfile": "^2.0.0"
+  },
+  "author": "Harshika Shete",
+  "license": "ISC"
+}
